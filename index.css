@@ -1,0 +1,106 @@
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #F0F2F0;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #000C40, #F0F2F0);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #000C40, #F0F2F0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+    min-height: 100vh;;
+}
+
+#site-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo-mborijnland {
+    display: none;
+    flex-basis: content; 
+}
+
+#logo-mborijnland img {
+    width: 30vw;
+}
+
+#site-title {
+    margin: 0.6em 0.8em;
+}
+
+#site-content {
+    margin: 0.6em 0.8em;
+}
+
+#student-navs {
+    display: flex;
+}
+
+nav.students {
+    flex: 1;
+    margin: 0.8em 0.8em;
+    border-radius: 1em;
+    background: white;
+    padding: 1em 0.8em;
+}
+
+nav.students h2 {
+    margin-top: 0;
+    text-align: center;
+}
+
+nav.students a {
+    text-decoration: none;
+    color: inherit;
+}
+
+nav.students a {
+    text-decoration: underline;
+}
+
+@media all and (min-width: 700px) {
+    #logo-mborijnland {
+        display: block;
+    }
+}
+
+#resume {
+    margin: 0 auto; /* for centering, feel free to use flexbox or some other method*/
+    box-sizing: border-box;
+    padding: 0.5in; /* controls margins */
+    max-width: 8.5in;
+    min-height: 11in;
+    background-color: white;
+    box-shadow: 0 3px 8px -3px rgba(0, 0, 0, 0.7);
+    margin-bottom: 2em;
+  }
+
+#resume #foto {
+    float: left;
+    width: 20%;
+}
+
+#resume > section {
+    clear: both;
+}
+
+#resume dl {
+    display: inline-block;
+}
+
+#resume table {
+    border-spacing: 0.4em 0.2em;
+}
+
+#resume td, #resume th {
+    padding: 0.2em 0.3em;
+}
+
+#resume th {
+    border-bottom: 1px solid black;
+}
